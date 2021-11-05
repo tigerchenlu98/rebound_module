@@ -2,7 +2,7 @@
  * @file    core.h
  * @brief   Central internal functions for REBOUNDx (not called by user)
  * @author  Dan Tamayo <tamayo.daniel@gmail.com>
- * 
+ *
  * @section     LICENSE
  * Copyright (c) 2015 Dan Tamayo, Hanno Rein
  *
@@ -75,6 +75,7 @@ void rebx_central_force(struct reb_simulation* const sim, struct rebx_force* con
 void rebx_gravitational_harmonics(struct reb_simulation* const sim, struct rebx_force* const force, struct reb_particle* const particles, const int N);
 // TLu 10/6
 void rebx_quadrupole_moment(struct reb_simulation* const sim, struct rebx_force* const force, struct reb_particle* const particles, const int N);
+void rebx_tidal_damping(struct reb_simulation* const sim, struct rebx_force* const force, struct reb_particle* const particles, const int N);
 // END TLu 10/6
 
 /****************************************
